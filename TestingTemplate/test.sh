@@ -3,10 +3,10 @@ make b
 make gen
 for((i = 1; ; i ++)); do
     echo $i
-    ./gen $i > int
-    if ! diff -w <(./a < int) <(./b < int) 
+    ./gen $i > testInput.in
+    if ! diff -w <(./a < testInput.in) <(./b < testInput.in)
     then
-    	cat int
+    	cat testInput.in
     	break
 	fi
 done
