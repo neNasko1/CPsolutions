@@ -2,4 +2,6 @@
 *.exe
 *.out
 *.in
-
+TestingTemplate/a.cpp
+TestingTemplate/b.cpp
+TestingTemplate/gen.cpp
